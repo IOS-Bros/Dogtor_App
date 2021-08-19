@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041E076A26AC074200636875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E076926AC074200636875 /* AppDelegate.swift */; };
+		041E076C26AC074200636875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E076B26AC074200636875 /* SceneDelegate.swift */; };
+		041E076E26AC074200636875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E076D26AC074200636875 /* ViewController.swift */; };
+		041E077126AC074200636875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E076F26AC074200636875 /* Main.storyboard */; };
+		041E077326AC074400636875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041E077226AC074400636875 /* Assets.xcassets */; };
+		041E077626AC074400636875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E077426AC074400636875 /* LaunchScreen.storyboard */; };
+		0438935D26AC679C00D30B72 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438935C26AC679C00D30B72 /* AddViewController.swift */; };
+		1584DA0FE69DEDBFB6831BF2 /* Pods_Dogtor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1989AEA16DAEFA0ED15A5A01 /* Pods_Dogtor.framework */; };
+		1FAFF31A26B2752C00FA3C64 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFF31926B2752C00FA3C64 /* SQLite.swift */; };
+		377B68B426B382A400647AF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B68B326B382A400647AF3 /* DetailViewController.swift */; };
+		37AF0D2926B3C80C002B0E60 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF0D2826B3C80C002B0E60 /* Extention.swift */; };
+		8061E7F626B4086A000BEFE5 /* DateHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061E7F526B4086A000BEFE5 /* DateHandling.swift */; };
+		80A556F326B18CF3005CB52D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A556F226B18CF3005CB52D /* InitialViewController.swift */; };
+		80FE287526B3CEBB00D8D1B7 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE287426B3CEBB00D8D1B7 /* ToDoModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041E076626AC074200636875 /* Dogtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041E076926AC074200636875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041E076B26AC074200636875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		041E076D26AC074200636875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041E077026AC074200636875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041E077226AC074400636875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041E077526AC074400636875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041E077726AC074400636875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438935C26AC679C00D30B72 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		104E873826DA5F4752FA68DA /* Pods-Dogtor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dogtor.release.xcconfig"; path = "Target Support Files/Pods-Dogtor/Pods-Dogtor.release.xcconfig"; sourceTree = "<group>"; };
+		1989AEA16DAEFA0ED15A5A01 /* Pods_Dogtor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dogtor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAFF31926B2752C00FA3C64 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		377B68B326B382A400647AF3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		37AF0D2826B3C80C002B0E60 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		7BEF2B2E07C7234D419A396D /* Pods-Dogtor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dogtor.debug.xcconfig"; path = "Target Support Files/Pods-Dogtor/Pods-Dogtor.debug.xcconfig"; sourceTree = "<group>"; };
+		8061E7F526B4086A000BEFE5 /* DateHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHandling.swift; sourceTree = "<group>"; };
+		80A556F226B18CF3005CB52D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		80FE287426B3CEBB00D8D1B7 /* ToDoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041E076326AC074200636875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1584DA0FE69DEDBFB6831BF2 /* Pods_Dogtor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041E075D26AC074200636875 = {
+			isa = PBXGroup;
+			children = (
+				80FE287826B3F80000D8D1B7 /* Utility */,
+				37AF0D2726B3C7DE002B0E60 /* UIView */,
+				1FAFF31826B273DF00FA3C64 /* SQLite */,
+				041E076826AC074200636875 /* Dogtor */,
+				041E076726AC074200636875 /* Products */,
+				FBDA999A28514685B7B45B93 /* Pods */,
+				B1CEED3EE8A6D11DC2921454 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		041E076726AC074200636875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041E076626AC074200636875 /* Dogtor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041E076826AC074200636875 /* Dogtor */ = {
+			isa = PBXGroup;
+			children = (
+				041E076926AC074200636875 /* AppDelegate.swift */,
+				041E076B26AC074200636875 /* SceneDelegate.swift */,
+				041E076D26AC074200636875 /* ViewController.swift */,
+				80A556F226B18CF3005CB52D /* InitialViewController.swift */,
+				0438935C26AC679C00D30B72 /* AddViewController.swift */,
+				377B68B326B382A400647AF3 /* DetailViewController.swift */,
+				041E076F26AC074200636875 /* Main.storyboard */,
+				041E077226AC074400636875 /* Assets.xcassets */,
+				041E077426AC074400636875 /* LaunchScreen.storyboard */,
+				041E077726AC074400636875 /* Info.plist */,
+			);
+			path = Dogtor;
+			sourceTree = "<group>";
+		};
+		1FAFF31826B273DF00FA3C64 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				1FAFF31926B2752C00FA3C64 /* SQLite.swift */,
+				80FE287426B3CEBB00D8D1B7 /* ToDoModel.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		37AF0D2726B3C7DE002B0E60 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				37AF0D2826B3C80C002B0E60 /* Extention.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		80FE287826B3F80000D8D1B7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8061E7F526B4086A000BEFE5 /* DateHandling.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B1CEED3EE8A6D11DC2921454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1989AEA16DAEFA0ED15A5A01 /* Pods_Dogtor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBDA999A28514685B7B45B93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF2B2E07C7234D419A396D /* Pods-Dogtor.debug.xcconfig */,
+				104E873826DA5F4752FA68DA /* Pods-Dogtor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041E076526AC074200636875 /* Dogtor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041E077A26AC074400636875 /* Build configuration list for PBXNativeTarget "Dogtor" */;
+			buildPhases = (
+				DC3095893D1C3B9EBC001D2B /* [CP] Check Pods Manifest.lock */,
+				041E076226AC074200636875 /* Sources */,
+				041E076326AC074200636875 /* Frameworks */,
+				041E076426AC074200636875 /* Resources */,
+				E6A379D85E112E2690DAFC8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dogtor;
+			productName = pet_prototype;
+			productReference = 041E076626AC074200636875 /* Dogtor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041E075E26AC074200636875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					041E076526AC074200636875 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 041E076126AC074200636875 /* Build configuration list for PBXProject "Dogtor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041E075D26AC074200636875;
+			productRefGroup = 041E076726AC074200636875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041E076526AC074200636875 /* Dogtor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041E076426AC074200636875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041E077626AC074400636875 /* LaunchScreen.storyboard in Resources */,
+				041E077326AC074400636875 /* Assets.xcassets in Resources */,
+				041E077126AC074200636875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC3095893D1C3B9EBC001D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dogtor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A379D85E112E2690DAFC8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dogtor/Pods-Dogtor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dogtor/Pods-Dogtor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dogtor/Pods-Dogtor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041E076226AC074200636875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AF0D2926B3C80C002B0E60 /* Extention.swift in Sources */,
+				80A556F326B18CF3005CB52D /* InitialViewController.swift in Sources */,
+				1FAFF31A26B2752C00FA3C64 /* SQLite.swift in Sources */,
+				041E076E26AC074200636875 /* ViewController.swift in Sources */,
+				8061E7F626B4086A000BEFE5 /* DateHandling.swift in Sources */,
+				041E076A26AC074200636875 /* AppDelegate.swift in Sources */,
+				0438935D26AC679C00D30B72 /* AddViewController.swift in Sources */,
+				041E076C26AC074200636875 /* SceneDelegate.swift in Sources */,
+				377B68B426B382A400647AF3 /* DetailViewController.swift in Sources */,
+				80FE287526B3CEBB00D8D1B7 /* ToDoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		041E076F26AC074200636875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041E077026AC074200636875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041E077426AC074400636875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041E077526AC074400636875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041E077826AC074400636875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041E077926AC074400636875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041E077B26AC074400636875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BEF2B2E07C7234D419A396D /* Pods-Dogtor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5LVZSY67B;
+				INFOPLIST_FILE = Dogtor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectD.Dogtor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041E077C26AC074400636875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104E873826DA5F4752FA68DA /* Pods-Dogtor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5LVZSY67B;
+				INFOPLIST_FILE = Dogtor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectD.Dogtor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041E076126AC074200636875 /* Build configuration list for PBXProject "Dogtor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041E077826AC074400636875 /* Debug */,
+				041E077926AC074400636875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041E077A26AC074400636875 /* Build configuration list for PBXNativeTarget "Dogtor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041E077B26AC074400636875 /* Debug */,
+				041E077C26AC074400636875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041E075E26AC074200636875 /* Project object */;
+}
