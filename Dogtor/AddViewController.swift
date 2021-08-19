@@ -1,9 +1,3 @@
-//
-//  AddViewController.swift
-//  pet_prototype
-//
-//  Created by 예쁘고 비싼 thㅡ레기 on 2021/07/25.
-//
 
 import UIKit
 
@@ -24,7 +18,6 @@ class AddViewController: UIViewController {
         
         receiveDay(receiveDate)
         datePicker.setDate(changeDate, animated: true)
-        // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.tintColor = UIColor.white
         tfContext.placeholder = "내용을 입력해주세요!"
         
@@ -38,7 +31,6 @@ class AddViewController: UIViewController {
     
     func receiveDay(_ date: String){
         receiveDate = date
-        // 날짜로 변경
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormatter.timeZone = TimeZone.autoupdatingCurrent
@@ -58,57 +50,31 @@ class AddViewController: UIViewController {
         realTitle = tfTitle.text!
         realContext = tfContext.text!
         
-        //날자값이 중복으로 들어가지 않게 evenvts에 추가하려는 일자가 없을경우만 추가하도록 수정
         let receiveDateToDate = dateHandler.StringtoDate(dateStr: receiveDate)
         if events.firstIndex(of: receiveDateToDate!) == nil{
             events.append(receiveDateToDate!)
         }
         
-//        if !sqlite.insert(realTitle, realContext, receiveDate, current_date_string){
-//            alter(message: "등록 실패 했습니다.", value: true)
-//            return
-//        } else {
-//            alter(message: "+1 능력 상승 되었습니다.", value: true)
-//        }
-        //----------------------------
         guard let toDoModel = sqlite.insertAndReturn(realTitle, realContext, receiveDate, current_date_string) else {
             alter(message: "등록 실패 했습니다.", value: true)
             return
         }
         
-        alter(message: "+1 능력 상승 되었습니다.", value: true)
+        alter(message: "등록 성공 했습니다.", value: true)
         
         let splitedtagetDate = receiveDate.split(separator: "-")
         let date = Int(splitedtagetDate[2])!
-//
-//        guard let toDoModel = sqlite.getLastOne() else {
-//            print("data load fail")
-//            return
-//        }
-//
         if var toDoModelArr = toDoDicBySelectedDate[date] {
             toDoModelArr.append(toDoModel)
             toDoModelArr.sort(by: {$0.no > $1.no})
             toDoDicBySelectedDate[date] = toDoModelArr
-            print("\(date)일에 데이터가 추가되었습니다.")
         } else {
             var newToDoModelArr = [ToDoModel]()
             newToDoModelArr.append(toDoModel)
             toDoDicBySelectedDate[date] = newToDoModelArr
-            print("\(date)일에 첫번째 데이터가 추가되었습니다.")
         }
-        //--------------------
+        
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 
@@ -131,5 +97,17 @@ extension UIViewController{
         let dataString = dateFormatter.string(from: date)
         
         return dataString
+    }
+}
+
+extension AddViewController: ManageDBErrorProtocol{
+    func manageDBError() {
+        let alert = UIAlertController(title: "Error", message: "데이터베이스 에러, 앱을 재실행해 주세요.", preferredStyle: .alert)
+        let actionDefault = UIAlertAction(title: "확인", style: .default, handler: {
+            ACTION in
+            exit(0)
+        })
+        alert.addAction(actionDefault)
+        self.present(alert, animated: true, completion: nil)
     }
 }

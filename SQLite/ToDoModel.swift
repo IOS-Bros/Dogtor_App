@@ -1,9 +1,3 @@
-//
-//  CalendarRecordModel.swift
-//  pet_prototype
-//
-//  Created by 윤재필 on 2021/07/29.
-//
 
 import Foundation
 
@@ -31,9 +25,5 @@ class ToDoModel{
         self.targetDate = targetDate
         self.submitDate = submitDate
         self.deleteDate = deleteDate
-    }
-    
-    func printData(){
-        print("no : \(no), title : \(title), contents : \(contents), targetDate : \(targetDate), submitDate : \(submitDate)")
     }
 }

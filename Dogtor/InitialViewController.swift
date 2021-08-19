@@ -1,9 +1,3 @@
-//
-//  InitialViewController.swift
-//  pet_prototype
-//
-//  Created by 윤재필 on 2021/07/28.
-//
 
 import UIKit
 
@@ -28,12 +22,24 @@ class InitialViewController: UIViewController {
             self.ivLogo.alpha = 1.0
         })
         DispatchQueue.main.asyncAfter(deadline: time, execute: self.moveToMain)
-    } //viewDidLoad
+    }
     
     func moveToMain(){
       let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "main")
         mainVC?.modalPresentationStyle = .fullScreen
         self.present(mainVC!, animated: true, completion: nil)
         self.navigationController?.popViewController(animated: false)
-    } //moveToMain
-} //InitialViewController
+    }
+}
+
+extension InitialViewController: ManageDBErrorProtocol{
+    func manageDBError() {
+        let alert = UIAlertController(title: "Error", message: "데이터베이스 에러, 앱을 재실행해 주세요.", preferredStyle: .alert)
+        let actionDefault = UIAlertAction(title: "확인", style: .default, handler: {
+            ACTION in
+            exit(0)
+        })
+        alert.addAction(actionDefault)
+        self.present(alert, animated: true, completion: nil)
+    }
+}

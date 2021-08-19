@@ -1,9 +1,3 @@
-//
-//  DetailViewController.swift
-//  pet_prototype
-//
-//  Created by SeungYeon on 2021/07/30.
-//
 
 import UIKit
 
@@ -30,7 +24,6 @@ class DetailViewController: UIViewController {
         tfTitle.text = receiveTitle
         tvContent.text = receiveContent
         tvContent.placeholder = "내용을 입력해주세요!"
-        // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.tintColor = UIColor.white
         detailDatePicker.setDate(changeDate, animated: true)
         
@@ -48,7 +41,6 @@ class DetailViewController: UIViewController {
         receiveContent = content
         receiveTargetDate = targetDate
         
-        // 날짜로 변경
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormatter.timeZone = TimeZone.autoupdatingCurrent
@@ -69,25 +61,23 @@ class DetailViewController: UIViewController {
         receiveTitle = tfTitle.text!
         receiveContent = tvContent.text!
         
-        let viewController = ViewController()
-        events.append(viewController.selectDateType!)
-        
         let updateResult = sqlite.update(receiveNo, receiveTitle, receiveContent, receiveTargetDate)
         if updateResult{
-            alter(message: "+1 능력 수정 되었습니다.", value: true)
+            alter(message: "수정 성공 했습니다.", value: true)
         }else{
             alter(message: "수정 실패 했습니다.", value: true)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
+extension DetailViewController: ManageDBErrorProtocol{
+    func manageDBError() {
+        let alert = UIAlertController(title: "Error", message: "데이터베이스 에러, 앱을 재실행해 주세요.", preferredStyle: .alert)
+        let actionDefault = UIAlertAction(title: "확인", style: .default, handler: {
+            ACTION in
+            exit(0)
+        })
+        alert.addAction(actionDefault)
+        self.present(alert, animated: true, completion: nil)
+    }
+}

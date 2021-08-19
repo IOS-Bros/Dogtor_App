@@ -1,10 +1,3 @@
-//
-//  DateHandling.swift
-//  pet_prototype
-//
-//  Created by 윤재필 on 2021/07/29.
-//
-
 import Foundation
 
 class DateHandling{
@@ -27,18 +20,15 @@ class DateHandling{
         return cal.component(.day, from: date)
     }
     
-    func StringtoDate(dateStr: String) -> Date? { //"yyyy-MM-dd HH:mm:ss"
+    func StringtoDate(dateStr: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        //현재 이게 없어야 정상적으로 찍히는데 이유는 모르겠음 달력 날자랑 연관되있나? 싶음
-        //dateFormatter.timeZone = TimeZone(identifier: "UTC")
         if let date = dateFormatter.date(from: dateStr) {
             return date
         } else {
             return nil
         }
     }
-
     
     func splitedDateStr(dateStr: String) -> [String]{
         var result = [String]()
