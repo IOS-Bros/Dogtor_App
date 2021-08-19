@@ -51,6 +51,8 @@ class ViewController: UIViewController{
 
         calendar.reloadData()
         getTodoByMonth(dateFomatString: selectDate01)
+        events.removeAll()
+        getTodoByDate()
         toDoTableView.reloadData()
             
     }
