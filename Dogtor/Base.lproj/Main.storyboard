@@ -11,7 +11,7 @@
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="pet_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="Dogtor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Dogtor-->
         <scene sceneID="VC9-mc-33i">
             <objects>
-                <viewController id="Tks-sT-ruL" customClass="ViewController" customModule="pet_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tks-sT-ruL" customClass="ViewController" customModule="Dogtor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mCP-Iq-kyX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
         <!--Add View Controller-->
         <scene sceneID="geP-Nl-Xtm">
             <objects>
-                <viewController id="R73-Hs-GvB" customClass="AddViewController" customModule="pet_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R73-Hs-GvB" customClass="AddViewController" customModule="Dogtor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="btg-tf-HWe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
         <!--Detail View Controller-->
         <scene sceneID="iHb-UT-b5j">
             <objects>
-                <viewController id="hMP-B7-yiY" customClass="DetailViewController" customModule="pet_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hMP-B7-yiY" customClass="DetailViewController" customModule="Dogtor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a2x-3Z-vFR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
