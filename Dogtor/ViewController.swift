@@ -78,7 +78,7 @@ class ViewController: UIViewController{
     }
         
     func calendarTextcolor(){
-            calendar.appearance.titleDefaultColor = .black
+            calendar.appearance.titleDefaultColor = .label
             calendar.appearance.titleWeekendColor = .red
             calendar.appearance.headerTitleColor = .systemPink
             calendar.appearance.weekdayTextColor = .orange
