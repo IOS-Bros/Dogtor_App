@@ -79,10 +79,10 @@ class ViewController: UIViewController{
         
     func calendarTextcolor(){
             calendar.appearance.titleDefaultColor = .label
-            calendar.appearance.titleWeekendColor = .red
+            calendar.appearance.titleWeekendColor = .systemRed
             calendar.appearance.headerTitleColor = .systemPink
-            calendar.appearance.weekdayTextColor = .orange
-        }
+            calendar.appearance.weekdayTextColor = .systemOrange
+    }
         
     func encodingMonth(){
         calendar.appearance.headerDateFormat = "YYYY년 M월"
